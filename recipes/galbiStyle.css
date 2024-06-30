@@ -1,0 +1,37 @@
+body {
+    background-color: rgba(85, 123, 147, 0.729);
+}
+
+h1 {
+    text-align: center; 
+}
+
+img {
+    margin: auto; 
+    display: block;
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+    break-inside: avoid;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+}
+
+p {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 10px; 
+}
+
+.grid-container > div {
+    border: 1px solid lightgrey;
+    padding: 10px;
+    break-inside: avoid;
+}

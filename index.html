@@ -1,16 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="styles.css"/>
-    </head>
-    <body>
-        <h1>Recipes</h1>
-        <img src="Gordon.jpeg">
-        <ul>
-            <li class="recipes asian"><a href="recipes/bossam.html">Bossam</a></li>
-            <li class="recipes western"><a href="recipes/salmon_bowl.html">Salmon Bowl</a></li>
-            <li class="recipes asian"><a href="recipes/galbi.html">Galbi</a></li>
-        </ul>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Nicky's Recipes</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Nicky's Recipes</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#eastern-recipes">Eastern Recipes</a></li>
+                    <li><a href="#western-recipes">Western Recipes</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="intro">
+            <img src="Gordon.jpeg" alt="Gordon Ramsay">
+        </section>
+        <section id="eastern-recipes" class="recipes">
+            <h2>Eastern Recipes</h2>
+            <div class="recipe-card bossam">
+                <button class="bossamButton"><a href="recipes/bossam.html">Bossam</a></button>
+            </div>
+            <div class="recipe-card galbi">
+                <button class="galbiButton"><a href="recipes/galbi.html">Galbi</a></button>
+            </div>
+        </section>
+        <section id="western-recipes" class="recipes">
+            <h2>Western Recipes</h2>
+            <div class="recipe-card salmon">
+                <button class="salmonButton"><a href="recipes/salmon_bowl.html">Salmon Bowl</a></button>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
 </html>
